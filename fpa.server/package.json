@@ -7,13 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Fondspreisanzeige", "Server"
+    "Fondspreisanzeige",
+    "Server"
   ],
   "author": "Christian Lange",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.1",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
     "passport": "^0.4.0",
-    "tedious": "^2.0.0"
+    "passport-ldapauth": "^2.0.0",
+    "tedious": "^2.3.1"
   }
 }
