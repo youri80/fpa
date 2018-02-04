@@ -1,12 +1,13 @@
 var Connection = require('tedious').Connection;
-var fs = require('fs')
+var Request = require('tedious').Request;
+var TYPES = require('tedious').TYPES;
 var config = {
     userName: '',
     password: '',
     server: ''
 }
 
-var Request = require('tedious').Request;
+
 
 module.exports = {
     loadPrice: () => {
