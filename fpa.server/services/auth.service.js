@@ -10,11 +10,10 @@ module.exports = {
 
     hashValue: (chiper) => {
         return new Promise((resolve, reject) => {
-            try {
-                
+            try {        
                 crypto.pbkdf2(chiper, config.salt, 10000, 512, 'sha512', function (err, dk) {
                     if (err) {
-                        reject(err);
+                        throw err;
                     }
                     resolve({
                         pwd:  dk.toString('hex'), 
